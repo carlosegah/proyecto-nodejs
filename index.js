@@ -13,8 +13,8 @@ app.get('/', (req, res) => {
     });
 });
 
-import errores from './src/middlewares/not-found.js';
-app.use(errores);
+import notFound from './src/middlewares/not-found.js';
+app.use(notFound);
 
 const PORT = 3000;
 
